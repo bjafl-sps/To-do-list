@@ -26,9 +26,10 @@ try {
   // Load blank tasks array if user confirms reset
   if (userConfirmReset) {
     tasks = [];
+  } else {
+    // Redirect user to blank page if cancel pressed
+    window.location.href = "about:blank";
   }
-  // Redirect user to blank page if cancel pressed
-  window.location.href = "about:blank";
 }
 
 // Add click event listner for task list container in DOM
